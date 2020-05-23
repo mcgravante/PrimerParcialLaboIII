@@ -1,0 +1,142 @@
+#tabla
+{   color: rgb(0, 0, 0);
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid rgb(88, 17, 56);
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100%; 
+    border-radius:5px;
+    justify-content: center;
+    z-index: -1; 
+}
+
+
+#th, td
+{
+    border-collapse: collapse; 
+    border: 1px solid rgb(88, 17, 56);
+    padding: 10px;
+    padding-left: 20px;
+    border-radius:5px;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgb(129, 115, 115);
+}
+
+.defaultInput
+{
+ width: 100px;
+ height:25px;
+ padding: 5px;
+}
+
+.error
+{
+border:1px solid red;
+}
+
+
+#contenedorAgregar
+{
+    justify-content: space-between;
+    padding-left: 10px;
+    background: rgb(142, 248, 213);
+    border-radius:10px;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 12px 12px 5px 0px rgba(0,0,0,0.75);
+    flex-wrap: wrap; 
+    position: fixed;
+    top:25%;
+    left:25%; 
+    right:25%;
+}
+
+
+
+#loader
+{
+    opacity: 0.5;
+    flex-wrap: wrap; 
+    position: fixed; 
+    justify-content: center;
+    top:5%; /*25% este y*/ 
+    text-align: center;
+    bottom: 5%;
+    width: 100%;
+    z-index: 999;
+}
+
+
+#divUser
+{
+    width: 100%;
+}
+
+#cerrar
+{
+    background-color:rgb(184, 13, 13);
+    border-radius:10px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 5%;
+}
+
+
+#divCerrar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnModificar
+{
+    background-color: rgb(9, 134, 9);
+    border: 1px solid black;
+    color: white;
+    width: 47%;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px;
+
+}
+
+#divbotones
+{
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#btnEliminar
+{
+    background-color: rgb(184, 13, 13);
+    border: 1px solid black;
+    color: white;
+    width: 47%;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px;
+
+}
+
+#h1
+{
+    width: 100%;
+    left: 25%;
+    right: 25%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(255, 107, 107);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> PrimerParcialLaboIII</title>
+        <link rel="stylesheet" href="css/styles.css"/> 
+        <script type = "text/javascript" src="js/codigo.js" >
+        </script>
+    </head>
+    <body>
+        
+        <div class = "container-fluid" id= "contBtn" >
+            <h1 id = "h1">Lista de materias</h1>
+            
+        </div>
+        <table id="tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha Final</th>
+                <th>Turno</th>
+                <th style="display:none">ID</th>
+            </tr>
+        </table>
+        <div class = "container-fluid" id= "contenedorAgregar" hidden=true>
+            <div id = "divCerrar">
+                <input type="button" value = "x" id = "cerrar" name="cerrar">
+                <br>
+                </div>
+            <div id = "divNombre">
+                Nombre:
+                <input type="text" class="defaultInput" id = "nombre" name="nombre">
+                <br>
+            </div>
+            <div id = "divCuatrimestre">
+                Cuatrimestre:
+                <select name="select" id ="cuatrimestre" disabled>
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br>
+            </div>
+            <div id = "divFecha">
+                Fecha Final:
+                <input type="date" class="defaultInput" id = "fechaFinal" name="fechaFinal">
+            <br>
+            </div>
+            <div id = "divTurno">
+                Turno:
+                <input type="radio" value= "Mañana" id = "mañana" name="turno">
+                <label for="mañana">Mañana</label>
+                
+                <input type="radio" value = "Noche" id = "noche" name="turno">
+                <label for="noche">Noche</label>
+                <br>
+            </div>
+            <div id = "divId">
+                <input type="text" id = "id" name="id" readonly="readonly" hidden=true>
+                <br>
+            </div>
+            <div id = "divbotones">
+                <input type="button" value = "Eliminar" id = "btnEliminar" name="btnEliminar">
+            
+                <input type="button" value = "Modificar" id = "btnModificar" name="btnModificar">
+            </div>
+        </div>
+        <div class="loader" id="loader" hidden=true>
+            <input type = "image" src="img/spinner.gif">
+        </div>
+       
+    </body>
+</html>
